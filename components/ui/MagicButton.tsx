@@ -1,13 +1,5 @@
 import React from "react";
 
-interface Props {
-  title: string;
-  icon?: React.ReactNode;
-  position?: string;
-  handleClick?: () => void;
-  otherClasses?: string;
-}
-
 const MagicButton = ({
   title,
   icon,
