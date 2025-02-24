@@ -1,7 +1,7 @@
-//import Experience from "@/components/Experience";
-import Grid from "@/components/Grid";
+import Experience from "@/components/Experience";
+//import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-//import RecentProjects from "@/components/RecentProjects";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
 
@@ -21,11 +21,11 @@ export default function Home() {
         {/* hero section here */}
         <Hero />
         {/* grid section here */}
-        <Grid />
+        {/* <Grid /> */}
         {/* Recent Project here */}
-        {/* <RecentProjects /> */}
+        <RecentProjects />
         {/* Working Exp here */}
-        {/* <Experience /> */}
+        <Experience />
       </div>
     </main>
   );
