@@ -2,12 +2,15 @@
 import { cn } from "@/lib/utils";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
+import { GlobeDemo } from "./GridGlobe";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { useState } from "react";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import animationData from "@/data/confetti.json";
-import { SparklesCore } from "./sparkles";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -76,8 +79,6 @@ export const BentoGridItem = ({
         background: "rgb(10,10,46)",
         backgroundColor:
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,88,142,1) 68%, rgba(0,212,255,1) 100%)",
-        // "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,30,83,1) 35%, rgba(0,212,255,1) 100%)",
-        //linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,88,142,1) 68%, rgba(0,212,255,1) 100%)
       }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -127,7 +128,7 @@ export const BentoGridItem = ({
             {title}
           </div>
           {/* Github 3D Globe */}
-          {id === 2 && <SparklesCore />}
+          {id === 2 && <GlobeDemo />}
 
           {/* Tech stack list */}
           {id === 3 && (
@@ -143,7 +144,7 @@ export const BentoGridItem = ({
                 ].map((item) => (
                   <span
                     key={item}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
@@ -157,7 +158,7 @@ export const BentoGridItem = ({
                   (item) => (
                     <span
                       key={item}
-                      className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                      className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50
                     lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                     >
                       {item}
