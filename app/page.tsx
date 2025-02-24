@@ -23,9 +23,9 @@ export default function Home() {
         {/* grid section here */}
         <Grid />
         {/* Recent Project here */}
-        <RecentProjects />
+        {/* <RecentProjects /> */}
         {/* Working Exp here */}
-        <Experience />
+        {/* <Experience /> */}
       </div>
     </main>
   );
