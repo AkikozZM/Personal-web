@@ -1,5 +1,6 @@
+"use client";
 import Experience from "@/components/Experience";
-//import Grid from "@/components/Grid";
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -21,7 +22,7 @@ export default function Home() {
         {/* hero section here */}
         <Hero />
         {/* grid section here */}
-        {/* <Grid /> */}
+        <Grid />
         {/* Recent Project here */}
         <RecentProjects />
         {/* Working Exp here */}

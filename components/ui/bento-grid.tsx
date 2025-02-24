@@ -3,11 +3,11 @@ import { cn } from "@/lib/utils";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
-import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import animationData from "@/data/confetti.json";
+import { SparklesCore } from "./sparkles";
 
 export const BentoGrid = ({
   className,
@@ -127,7 +127,7 @@ export const BentoGridItem = ({
             {title}
           </div>
           {/* Github 3D Globe */}
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && <SparklesCore />}
 
           {/* Tech stack list */}
           {id === 3 && (
