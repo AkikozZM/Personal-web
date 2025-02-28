@@ -94,24 +94,24 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/",
+    link: "https://apple-web-vert.vercel.app/",
   },
-  {
-    id: 3,
-    title: "TBD",
-    des: "TBD",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/",
-  },
-  {
-    id: 4,
-    title: "TBD",
-    des: "TBD",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/",
-  },
+  // {
+  //   id: 3,
+  //   title: "TBD",
+  //   des: "TBD",
+  //   img: "/p2.svg",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+  //   link: "/",
+  // },
+  // {
+  //   id: 4,
+  //   title: "TBD",
+  //   des: "TBD",
+  //   img: "/p3.svg",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+  //   link: "/",
+  // },
 ];
 
 export const companies = [
