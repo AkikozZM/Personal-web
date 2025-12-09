@@ -11,10 +11,10 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-0">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[38rem] flex items-center justify-center w-full"
             key={item.id}
           >
             <PinContainer title={item.title} href={item.link}>
@@ -28,13 +28,13 @@ const RecentProjects = () => {
                 <Image
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 items-center"
+                  className="z-10 absolute bottom-12 items-center"
                   width={350}
                   height={350}
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mt-4">
                 {item.title}
               </h1>
 
